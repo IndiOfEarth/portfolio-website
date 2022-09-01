@@ -1,0 +1,253 @@
+/* Title Section Styling */
+#title {
+  background-color: #171717;
+  color: #EDEDED;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+/* Title Container */
+#title-container {
+  margin-top: 7rem;
+}
+
+
+/* About Section Styling */
+#about {
+  background-color: #EDEDED;
+  color: #444444;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+  background-color: #EDEDED;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+footer {
+  background-color: #171717;
+  color: #EDEDED;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h4, h5, h6, p{
+  font-family: 'Reem Kufi', sans-serif;
+  word-spacing: 5px;
+}
+
+a {
+  color: #EDEDED /*!important*/;
+  text-decoration: none !important;
+}
+
+.section-rule {
+  border: none !important;
+  height: 5px !important;
+  background-color: #DA0037 !important;
+  width: 30% !important;
+  margin: auto;
+  opacity: 1 !important;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* NavBar stuff */
+.navbar {
+  /* padding works: top right bottom left */
+  background-color: #171717;
+}
+
+.navbar-brand {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5rem !important;
+  /* Use rem for font sizes and other*/
+  /* Use %, vw,vh for padding and amrgins */
+}
+
+.nav-item {
+  font-family: Readex Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#navbarSupportedContent > ul > li > a:hover {
+  color: #DA0037;
+}
+
+#navbarSupportedContent > ul > li > a:focus {
+  color: #DA0037;
+}
+
+#navbarSupportedContent > ul > li > a[aria-selected='true'] {
+  color: #DA0037;
+}
+
+
+/* Title stuff */
+
+.title-heading {
+  font-size: 3rem;
+}
+
+.title-rule {
+  border: none !important;
+  height: 5px !important;
+  background-color: #DA0037 !important;
+  width: 30% !important;
+  margin: 4rem 0 4rem 0 !important;
+  opacity: 1 !important;
+}
+
+.title-textline {
+  line-height: 2.5rem;
+}
+
+/* About stuff */
+.about-text {
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.cta-1 {
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: #DA0037;
+  color: white;
+  text-align: center;
+  width: 200px;
+  border-radius: 4px;
+  padding: 5% 3.5% 5% 3.5%;
+  box-shadow: inset 0 0 0 0 #171717;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.cta-1:hover {
+  box-shadow: inset 200px 0 0 0 #171717;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Portfolio stuff */
+
+.portfolio-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.carousel-item {
+  height: 20rem;
+  background: #EDEDED;
+  /* border: 3px solid #171717; */
+}
+
+.carousel-imgs {
+  filter: opacity(80%);
+  height: 320px;
+  object-fit: cover;
+}
+
+.slide-img {
+  transition: 0.3s ease-in-out;
+}
+
+.caption {
+  opacity: 0;
+  transition: 0.3s ease-in;
+  color: white;
+  position: absolute;
+}
+.carousel-item:hover .caption {
+  opacity: 1;
+}
+
+.carousel-item:hover .slide-img {
+  filter: blur(3px);
+}
+
+.modal-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-button {
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: #171717;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.modal-button:hover {
+  background-color: white;
+  color: #171717;
+  cursor: pointer;
+}
+
+.modal-text {
+  white-space: pre-wrap; /*To preserve some of that white space y'know */
+}
+
+
+/* Footer stuff */
+
+.footer-message {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* Admin stuff */
+.admin-button {
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: #DA0037;
+  color: white;
+  text-align: center;
+  width: 200px;
+  border-radius: 4px;
+  padding: 2% 2% 2% 2%;
+  box-shadow: inset 0 0 0 0 #171717;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.admin-button:hover {
+  box-shadow: inset 200px 0 0 0 #171717;
+  color: white;
+  cursor: pointer;
+}
+
+.table-button {
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: #DA0037;
+  color: white;
+  text-align: center;
+  width: 100px;
+  border-radius: 4px;
+  padding: 2% 2% 2% 2%;
+  box-shadow: inset 0 0 0 0 #171717;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.table-button:hover {
+  box-shadow: inset 100px 0 0 0 #171717;
+  color: white;
+  cursor: pointer;
+}

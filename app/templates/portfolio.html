@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container py-5">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h2>Manage Portfolio</h2>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <a class="admin-button" href="{{ url_for('admin_home')}}">Admin Home</a>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col d-flex justify-content-center">
+            <table class="table table-sm table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        {% for column in column_names %}
+                        <th scope="col">{{column}}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for project in portfolio_projects %}
+                    <tr>
+                        <th scope="row">{{project.id}}</th>
+                        <td>{{project.project_name}}</td>
+                        <td>{{project.project_type}}</td>
+                        <td>{{project.short_desc}}</td>
+                        <td>{{project.description}}</td>
+                        <td>{{project.img_url_1}} (Owl Carousel Front Card)</td>
+                        <td>{{project.img_url_2}}</td>
+                        <td>{{project.img_url_3}}</td>
+                        <td>{{project.img_url_4}} (Carousel Image)</td>
+                        <td>{{project.modal_id}}</td>
+                        <td class="table-button"><a href="{{ url_for('edit', id=project.id)}}#pform">Edit Item</a></td>
+                        <td class="table-button"><a href="{{ url_for('delete', id=project.id)}}">Delete Item</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div id="pform" class="col">
+            <form method="POST" action="", enctype="multipart/form-data">
+                {{ project_form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        {{ project_form.id.label(class="form-control-label") }}
+                        {{ project_form.id(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.project_name.label(class="form-control-label") }}
+                        {{ project_form.project_name(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.project_type.label(class="form-control-label") }}
+                        {{ project_form.project_type(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.short_desc.label(class="form-control-label") }}
+                        {{ project_form.short_desc(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.description.label(class="form-control-label") }}
+                        {{ project_form.description(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.img_url_1.label(class="form-control-label") }}
+                        {{ project_form.img_url_1(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.img_url_2.label(class="form-control-label") }}
+                        {{ project_form.img_url_2(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.img_url_3.label(class="form-control-label") }}
+                        {{ project_form.img_url_3(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.img_url_4.label(class="form-control-label") }}
+                        {{ project_form.img_url_4(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.modal_id.label(class="form-control-label") }}
+                        {{ project_form.modal_id(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ project_form.submit(class="btn btn-outline-info") }}
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

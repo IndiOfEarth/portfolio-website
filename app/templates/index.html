@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indi Caburian</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Divs have no meaning in and of themselves and generally are only used for styling purposes as indicated above.
+   We use sections to give our document meaning for screen-readers and search engines. -->
+<!-- Class can apply to multiple objects. Id can only apply to at least one object -->
+
+<section id='title'>
+
+    <!-- Giving it a default container for scaling on different viewports -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container py-1">
+            <a class="navbar-brand" href="#"><span style="white-space: pre-line">INDI
+            CABURIAN</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <!--aria-current="page" -->
+                        <a class="nav-link active" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Title section -->
+    <div id="title-container" class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="title-heading">Hi, I'm Indi Caburian</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr class="title-rule">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="title-textline">I'm a mechanical engineering student at UCL, who loves reading, gaming and
+                    exploring new subjects.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id='about'>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col">
+                <br><br>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-6 col-sm-12">
+                <h2 class="about-text">about me</h2>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <p class="about-text">I aspire to be skilled in many different areas. I believe that the foundation for
+                    success in anything is passion and drive.</p>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-6">
+                <p class="about-text">I really enjoy making and crafting things. Being able to grow a project and
+                    develop it into a finished product, is an amazing feeling! With this, I like to spend alot of my
+                    free-time creating various programming and engineering projects, and honing my skills in my many
+                    other areas of interest, whether that's my passion for language-learning or the endless hours I
+                    spend drawing/sketching.</p>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center">
+                <!-- <div class="cta-1"> -->
+                <a class="cta-1" href="#footer">Get In Touch!</a>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id='portfolio'>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <br><br>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <hr class="section-rule">
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col">
+                <h2 class="section-heading">portfolio</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h5>Take a gander at some stuff I've done. Or don't.</h5>
+            </div>
+        </div>
+        <!-- Testing - Using row columns (Bootstrap 5) -->
+
+        <!-- Owl Carousel -->
+        <!-- * Implement the Jinja Templating here using an SQL database -->
+        <div class="row mt-5">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <!-- Start the loops here for jinja portfolio -->
+                    {% for project in portfolio_projects %}
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./static/img/{{project.img_url_1}}" alt="" class="card-img-top carousel-imgs">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>{{project.project_name}}</h4>
+                                    <p>{{project.short_desc}}</p>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-dark modal-button" data-bs-toggle="modal"
+                                            data-bs-target="#{{project.modal_id}}">
+                                        Have a look.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 portfolio-content">
+            <div class="col pb-3">
+                {% set tech_stuff = [] %}
+                {% for project in portfolio_projects if project.project_type == "tech-stuff" %}
+                {{ tech_stuff.append(project) or "" }}
+                {% endfor %}
+                <h3 class="">My Projects and Miscellaneous</h3>
+                <p class="mb-3">Various programming and passion projects I've worked on.</p>
+                <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        {% for i in range(tech_stuff|length) %}
+                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="{{i}}" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        {% endfor %}
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle -->
+                            <div class="d-flex h-100 align-items-center justify-content-center">
+                                <img src="./static/img/{{tech_stuff[0].img_url_4}}" class="d-block w-100 slide-img"
+                                     alt="...">
+                                <div class="caption">
+                                    <h2>{{ tech_stuff[0].project_name }}</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% for project in tech_stuff[1:] %}
+                        <div class="carousel-item">
+                            <!-- The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle -->
+                            <div class="d-flex h-100 align-items-center justify-content-center">
+                                <img src="./static/img/{{project.img_url_4}}" class="d-block w-100 slide-img" alt="...">
+                                <div class="caption">
+                                    <h2>{{project.project_name}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+<!--            <div class="col pb-3">-->
+<!--                {% set uni_projects = [] %}-->
+<!--                {% for project in portfolio_projects if project.project_type == "uni-project" %}-->
+<!--                {{ uni_projects.append(project) or "" }}-->
+<!--                {% endfor %}-->
+<!--                <h3 class="mt-3">Uni Projects</h3>-->
+<!--                <p class="mb-3">Engineering and other project's I've completed whilst at university.</p>-->
+<!--                <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">-->
+<!--                    <div class="carousel-indicators">-->
+<!--                        {% for i in range(uni_projects|length) %}-->
+<!--                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="{{i}}" class="active"-->
+<!--                                aria-current="true" aria-label="Slide 1"></button>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                    <div class="carousel-inner">-->
+<!--                        <div class="carousel-item active">-->
+<!--                            &lt;!&ndash; The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle &ndash;&gt;-->
+<!--                            <div class="d-flex h-100 align-items-center justify-content-center">-->
+<!--                                <img src="./static/img/{{uni_projects[0].img_url_4}}" class="d-block w-100 slide-img"-->
+<!--                                     alt="...">-->
+<!--                                <div class="caption">-->
+<!--                                    <h2>{{ uni_projects[0].project_name }}</h2>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        {% for project in uni_projects[1:] %}-->
+<!--                        <div class="carousel-item">-->
+<!--                            &lt;!&ndash; The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle &ndash;&gt;-->
+<!--                            <div class="d-flex h-100 align-items-center justify-content-center">-->
+<!--                                <img src="./static/img/{{project.img_url_4}}" class="d-block w-100 slide-img" alt="...">-->
+<!--                                <div class="caption">-->
+<!--                                    <h2>{{project.project_name}}</h2>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col pb-3">-->
+<!--                <h3 class="my-4">Miscellaneous</h3>-->
+<!--                <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">-->
+<!--                    <div class="carousel-indicators">-->
+<!--                        {% for i in range(imgs|length) %}-->
+<!--                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="{{i}}" class="active"-->
+<!--                                aria-current="true" aria-label="Slide 1"></button>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                    <div class="carousel-inner">-->
+<!--                        <div class="carousel-item active">-->
+<!--                            &lt;!&ndash; The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle &ndash;&gt;-->
+<!--                            <div class="d-flex h-100 align-items-center justify-content-center">-->
+<!--                                <img src="./static/img/other-imgs/{{imgs[0]}}" class="d-block w-100 slide-img"-->
+<!--                                     alt="...">-->
+<!--                                <div class="caption">-->
+<!--                                    <h2>art and photography</h2>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        {% for image in imgs[1:] %}-->
+<!--                        <div class="carousel-item">-->
+<!--                            &lt;!&ndash; The height of the div is 100% of the parent (so the same size). Now when you center it will be in the middle &ndash;&gt;-->
+<!--                            <div class="d-flex h-100 align-items-center justify-content-center">-->
+<!--                                <img src="./static/img/other-imgs/{{image}}" class="d-block w-100 slide-img" alt="...">-->
+<!--                                <div class="caption">-->
+<!--                                    <h2>art and photography</h2>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <div class="row justify-content-center pt-3">
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex justify-content-center">
+                <!-- <div class="cta-1"> -->
+                <a id="resume" class="cta-1" href="{{url_for('download_cv')}}">Download My Resume</a>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- Modal -->
+        {% for project in portfolio_projects %}
+        <div class="modal fade" id="{{project.modal_id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{project.project_name}}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col modal-img">
+                                    <img class="img-fluid" src="./static/img/{{project.img_url_1}}" alt="">
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-md-6 modal-img">
+                                    <img class="img-fluid" src="./static/img/{{project.img_url_2}}" alt="">
+                                </div>
+                                <div class="col-md-6 modal-img">
+                                    <img class="img-fluid" src="./static/img/{{project.img_url_3}}" alt="">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="modal-text">{{project.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center justify-content-lg-start">
+                <h2>contact me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center justify-content-lg-start">
+                <p class="footer-message">Send me a message!</p>
+                <br>
+                <p class="footer-message">E-Mail: indi.caburian@outlook.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center justify-content-lg-end">
+                <img src="./static/img/instagram.png" alt="instagram-icon" class="social-icon me-2">
+                <img src="./static/img/linkedin.png" alt="linkedin-icon" class="social-icon">
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+   $('.nav-link').click(function() {
+
+    $('.nav-link.active').removeClass('active');
+    $(this).addClass('active');
+   });
+
+</script>
+</body>
+
+</html>
